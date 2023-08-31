@@ -66,5 +66,6 @@ int binary_tree_is_bst(const binary_tree_t *tree);
 int is_bst_helper(const binary_tree_t *node, int min, int max);
 bst_t *bst_insert(bst_t **tree, int value);
 bst_t *array_to_bst(int *array, size_t size);
+int tree_height(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
