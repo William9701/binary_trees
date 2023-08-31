@@ -6,13 +6,13 @@
  */
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
+	int level_complete = 1, reached_last_level = 0, front = 0, rear = 0;
+	binary_tree_t *queue[1000];
+
 	if (tree == NULL)
 	{
 		return (0);
 	}
-	int level_complete = 1, reached_last_level = 0, front = 0, rear = 0;
-	binary_tree_t *queue[1000];
-
 	queue[rear++] = (binary_tree_t *)tree;
 	while (front < rear)
 	{
