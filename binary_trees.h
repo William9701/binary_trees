@@ -68,5 +68,8 @@ bst_t *bst_insert(bst_t **tree, int value);
 bst_t *array_to_bst(int *array, size_t size);
 int tree_height(const binary_tree_t *tree);
 bst_t *bst_search(const bst_t *tree, int value);
+bst_t *bst_remove(bst_t *root, int value);
+bst_t *Findmin(bst_t *root);
+
 
 #endif /* _BINARY_TREES_H_ */
